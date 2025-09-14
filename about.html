@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mpilo High School</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .history-timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #3b82f6;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3.5rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="http://static.photos/education/200x200/1" alt="School Logo" class="h-12 w-12 rounded-full">
+                    <span class="text-xl font-bold text-gray-800">Mpilo High</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-blue-600 font-medium">About</a>
+                    <a href="academics.html" class="text-gray-600 hover:text-blue-600">Academics</a>
+                    <a href="admissions.html" class="text-gray-600 hover:text-blue-600">Admissions</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">Our Story</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                For over three decades, Mpilo High has been committed to excellence in education.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="http://static.photos/education/640x360/4" alt="School Building" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Mission</h2>
+                    <p class="text-gray-600 mb-4">
+                        Mpilo High School is dedicated to nurturing intellectual growth, creativity, and character in a challenging and supportive environment.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        We strive to develop responsible global citizens who are prepared to meet the challenges of a rapidly changing world with confidence, compassion, and integrity.
+                    </p>
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+                        <h3 class="font-bold text-blue-600 mb-2">Vision Statement</h3>
+                        <p class="text-gray-700">To be a premier educational institution that inspires lifelong learning, fosters innovation, and cultivates leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our History</h2>
+            <div class="history-timeline max-w-3xl mx-auto">
+                <div class="timeline-item" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">1901 - Founding</h3>
+                    <p class="text-gray-600">Mpilo High was established with just 120 students and 8 faculty members in a small building.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">1992 - Expansion</h3>
+                    <p class="text-gray-600">The school moved to its current 20-acre campus with new science labs and a library.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">2001 - Accreditation</h3>
+                    <p class="text-gray-600">Received accreditation from the National Board of Education, recognizing our academic standards.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">2010 - STEM Center</h3>
+                    <p class="text-gray-600">Opened our state-of-the-art STEM center with robotics and computer science labs.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Present Day</h3>
+                    <p class="text-gray-600">Now serving over 1,200 students with 100+ faculty members and numerous academic and athletic achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Leadership</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md" data-aos="fade-up">
+                    <img src="http://static.photos/people/640x360/1" alt="Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Matabane</h3>
+                        <p class="text-blue-600 mb-3">Principal</p>
+                        <p class="text-gray-600">With 25 years in education, Dr. Matabane leads our school with vision and dedication to student success.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/people/640x360/2" alt="Vice Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Mr. James Wilson</h3>
+                        <p class="text-blue-600 mb-3">Vice Principal</p>
+                        <p class="text-gray-600">Specializing in curriculum development, Mr. Wilson ensures our academic programs remain innovative.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <img src="http://static.photos/people/640x360/3" alt="Dean" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Ms. Sarah Johnson</h3>
+                        <p class="text-blue-600 mb-3">Dean of Students</p>
+                        <p class="text-gray-600">Ms. Johnson focuses on student welfare and creating a positive school culture for all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Greenwood High</h3>
+                    <p class="text-gray-400">Preparing students for success in college, career, and life since 1901.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="academics.html" class="text-gray-400 hover:text-white">Academics</a></li>
+                        <li><a href="admissions.html" class="text-gray-400 hover:text-white">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i data-feather="map-pin" class="mr-2 w-4 h-4"></i> 123 Education Ave, Marulaneng City</li>
+                        <li class="flex items-center"><i data-feather="phone" class="mr-2 w-4 h-4"></i> (123) 456-7890</li>
+                        <li class="flex items-center"><i data-feather="mail" class="mr-2 w-4 h-4"></i> info@Mpilohigh.edu</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Mpilo High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
