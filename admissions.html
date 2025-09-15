@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admissions</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+        }
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="http://static.photos/education/200x200/1" alt="School Logo" class="h-12 w-12 rounded-full">
+                    <span class="text-xl font-bold text-gray-800">Mpilo High</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="academics.html" class="text-gray-600 hover:text-blue-600">Academics</a>
+                    <a href="#" class="text-blue-600 font-medium">Admissions</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <section class="hero-gradient text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white to-transparent opacity-10"></div>
+        </div>
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Begin Your <span class="text-yellow-300">Educational Journey</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">
+                    Join our vibrant learning community where students discover their passions and achieve academic excellence.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 shadow-lg transform hover:scale-105">
+                        Apply Now
+                    </button>
+                    <button class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition duration-300 shadow-lg transform hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                <div class="relative w-full max-w-md">
+                    <div class="floating">
+                        <img src="http://static.photos/education/1024x576/5" alt="Happy students" class="rounded-lg shadow-2xl border-8 border-white">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-3">
+                                <i data-feather="award" class="text-indigo-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Ranked #1</p>
+                                <p class="font-bold text-gray-800">In Academic Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block" data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex items-center">
+                            <div class="bg-pink-100 p-3 rounded-full mr-3">
+                                <i data-feather="users" class="text-pink-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Over</p>
+                                <p class="font-bold text-gray-800">2,000+ Students</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+
+    <!-- Admission Process -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
+                    Our Admission Process
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Simple steps to join our academic community
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="relative">
+                    <!-- Timeline -->
+                    <div class="space-y-8">
+                        <!-- Step 1 -->
+                        <div class="relative timeline-item pl-16" data-aos="fade-right">
+                            <div class="absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-white">
+                                <span class="text-sm font-bold">1</span>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-lg font-medium text-gray-900">Application Submission</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Complete our online application form with your personal and academic details.
+                                </p>
+                                <div class="mt-4">
+                                    <a href="admissions.html" class="text-indigo-600 hover:text-indigo-500 font-medium">
+                                        Start Application <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative timeline-item pl-16" data-aos="fade-right" data-aos-delay="100">
+                            <div class="absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-white">
+                                <span class="text-sm font-bold">2</span>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-lg font-medium text-gray-900">Document Submission</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Upload required documents including transcripts, test scores, and recommendation letters.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative timeline-item pl-16" data-aos="fade-right" data-aos-delay="200">
+                            <div class="absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-white">
+                                <span class="text-sm font-bold">3</span>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-lg font-medium text-gray-900">Application Review</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Our admissions committee will carefully review your application and documents.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="relative timeline-item pl-16" data-aos="fade-right" data-aos-delay="300">
+                            <div class="absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 text-white">
+                                <span class="text-sm font-bold">4</span>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-lg font-medium text-gray-900">Admission Decision</h3>
+                                <p class="mt-2 text-gray-600">
+                                    You'll receive notification of our decision via email within 4-6 weeks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Requirements Section -->
+    <div class="bg-gray-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
+                    Admission Requirements
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    What you need to prepare for your application
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Applicants -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm transition-all duration-300 card-hover" data-aos="fade-up">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600">
+                            <i data-feather="book" class="h-6 w-6"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">Applicant</h3>
+                            <ul class="mt-4 space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                    <span>Report Average 50%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                    <span>Identification and Address</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                    <span>Referral Letter</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                    <span>Letter of Good Conduct</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deadlines Section -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
+                    Application Deadlines
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Important dates to keep in mind
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="bg-indigo-50 rounded-xl overflow-hidden shadow">
+                    <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-indigo-100">
+                        <!-- Spring -->
+                        <div class="p-8" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-indigo-100 rounded-md p-2">
+                                    <i data-feather="cloud" class="h-6 w-6 text-indigo-600"></i>
+                                </div>
+                                <h3 class="ml-4 text-lg font-medium text-gray-900">Yearly Intake</h3>
+                            </div>
+                            <div class="mt-6 space-y-4">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-500">Priority Deadline</p>
+                                    <p class="mt-1 text-gray-900">September 1</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-500">Regular Deadline</p>
+                                    <p class="mt-1 text-gray-900">November 1</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-500">Classes Begin</p>
+                                    <p class="mt-1 text-gray-900">January 15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-indigo-700">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl" data-aos="fade-up">
+                    Ready to begin your journey?
+                </h2>
+                <p class="mt-6 max-w-2xl text-xl text-indigo-200 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Join our community of scholars and innovators today.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="admissions.html" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                        Apply Now
+                    </a>
+                    <a href="admissions.html" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10">
+                        Contact Admissions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+     <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mpilo High</h3>
+                    <p class="text-gray-400">Preparing students for success in college, career, and life since 1901.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="academics.html" class="text-gray-400 hover:text-white">Academics</a></li>
+                        <li><a href="admissions.html" class="text-gray-400 hover:text-white">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i data-feather="map-pin" class="mr-2 w-4 h-4"></i> 123 Education Ave, Marulaneng City</li>
+                        <li class="flex items-center"><i data-feather="phone" class="mr-2 w-4 h-4"></i> (123) 456-7890</li>
+                        <li class="flex items-center"><i data-feather="mail" class="mr-2 w-4 h-4"></i> info@Mpilohigh.edu</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2011 Mpilo High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
