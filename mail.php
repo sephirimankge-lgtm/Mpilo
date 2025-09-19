@@ -63,7 +63,7 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 // Check if the form was submitted
-if (isset($_POST['submit'])) {
+if (isset($_POST['email'])) {
      //Collect and sanitize form data
       $name = $_POST['name']);
       $emailadrdress = ($_POST['email']);
@@ -111,11 +111,11 @@ if (isset($_POST['submit'])) {
         //$email= "Topic: $topic\n";
         //$email= "Message: $message\n";
     
-      if ($mail->send())
-      {
-    (mail($email->Subject, $email->Body)) 
+      //if ($mail->send())
+    
+    if mail($email->Subject, $email->Body )
         //Redirect to a thank you page or show a success message
-        header("Location: index.html");
+        header("Location: contact.html");
         exit;
     } else {
         echo "An error occurred while sending your message. Please try again later.";
@@ -123,7 +123,8 @@ if (isset($_POST['submit'])) {
   }
 } else {
     // If the form wasn't submitted, redirect back to the contact form
-    header("Location: contact.html");
+    header("Location: index.html");
+    echo "Not sent.";
     exit;
 }
 ?>
