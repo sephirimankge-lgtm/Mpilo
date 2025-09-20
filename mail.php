@@ -1,4 +1,4 @@
-//<?php
+//
 // Check if the form was submitted
 //if (isset($_POST['submit'])) {
     // Collect and sanitize form data
@@ -38,7 +38,7 @@
     //header("Location: contact.html");
     //exit;
 //}
-//?>
+//
 
 
 //<?php
@@ -63,7 +63,7 @@ require 'PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 
 // Check if the form was submitted
-if (isset($_POST['submit'])) {
+//if (isset($_POST['submit'])) {
      //Collect and sanitize form data
       $name = htmlspecialchars($_POST['name']);
       $emailadrdress = htmlspecialchars($_POST['email']);
@@ -79,8 +79,8 @@ if (isset($_POST['submit'])) {
       $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
       $mail->Username   = 'sephiriworkplace@gmail.com';                     //SMTP username
       $mail->Password   = 'qwgovxrfrmsmwvas';                               //SMTP password
-      $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-      $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+      $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+      $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   
       //Recipients
       $mail->setFrom('sephiriworkplace@gmail.com', 'Mailer');
@@ -111,20 +111,28 @@ if (isset($_POST['submit'])) {
         //$email= "Topic: $topic\n";
         //$email= "Message: $message\n";
     
-      //if ($mail->send())
+      if ($mail->send()){
+          echo "Sent successfully";
+          exit;
+          }else}
+              echo : "Error has occurred";
+              exit;
+      }
+      
     
-    if mail($email->Subject, $email->Body )
+    if mail($email->Subject, $email->Body ){
         //Redirect to a thank you page or show a success message
         echo : "message successfully sent";
         exit;
     } else {
         echo "An error occurred while sending your message. Please try again later.";
+        exit;
     }
-  }
-} else {
+ }
+//} else {
     // If the form wasn't submitted, redirect back to the contact form
-    header("Location: index.html");
-    echo "Not sent.";
-    exit;
-}
+    //header("Location: index.html");
+    //echo "Not sent.";
+    //exit;
+//}
 ?>
