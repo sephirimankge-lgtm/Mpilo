@@ -66,8 +66,8 @@ $mail = new PHPMailer(true);
 if (isset($_POST['email'])) {
      //Collect and sanitize form data
       $name = htmlspecialchars($_POST['name']);
-      $emailadrdress = ($_POST['email']);
-      $phone = ($_POST['phone']);
+      $emailadrdress = htmlspecialchars($_POST['email']);
+      $phone = htmlspecialchars($_POST['phone']);
       $topic = ($_POST['topic']); 
       $message = ($_POST['message']); 
 
