@@ -65,7 +65,7 @@ $mail = new PHPMailer(true);
 // Check if the form was submitted
 if (isset($_POST['email'])) {
      //Collect and sanitize form data
-      $name = $_POST['name']);
+      $name = htmlspecialchars($_POST['name']);
       $emailadrdress = ($_POST['email']);
       $phone = ($_POST['phone']);
       $topic = ($_POST['topic']); 
@@ -115,7 +115,7 @@ if (isset($_POST['email'])) {
     
     if mail($email->Subject, $email->Body )
         //Redirect to a thank you page or show a success message
-        header("Location: contact.html");
+        echo :message successfully sent"
         exit;
     } else {
         echo "An error occurred while sending your message. Please try again later.";
