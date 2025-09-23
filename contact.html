@@ -159,26 +159,26 @@
         </div>
     </footer>
 
-    //<script>
-        //AOS.init({
-            //duration: 800,
-            //easing: 'ease-in-out',
-            //once: true
-        //});
-        //feather.replace();
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
         // Tab functionality
-        //document.querySelectorAll('.tab-button').forEach(button => {
-            //button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
                 // Remove active class from all buttons and tabs
-                //document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-                //document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
                 
                 // Add active class to clicked button and corresponding tab
-                //button.classList.add('active');
-                //const tabId = button.getAttribute('data-tab');
-                //document.getElementById(tabId).classList.add('active');
-            //});
-        //});
-    //</script>
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
