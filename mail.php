@@ -68,7 +68,7 @@ $mail = new PHPMailer(true);
       $name = htmlspecialchars($_POST['name']);
       $emailadrdress = htmlspecialchars($_POST['email']);
       $phone = htmlspecialchars($_POST['phone']);
-      $topic = ($_POST['topic']); 
+      $topic = ($_POST['subject']); 
       $message = ($_POST['message']); 
 
   try {
@@ -101,14 +101,14 @@ $mail = new PHPMailer(true);
         <h4>name:'.$name.'</h4>
         <h4>email:'.$emailaddress.'</h4>
         <h4>phone:'.$phone.'</h4>
-        <h4>topic:'.$topic.'</h4>
+        <h4>topic:'.$subject.'</h4>
         <h4>message:'.$message.'</h4>
         ';
           
         //$email= "Name: $name\n";
         //$email= "Email: $email\n";
         //$email= "Phone: $phone\n";
-        //$email= "Topic: $topic\n";
+        //$email= "Topic: $subject\n";
         //$email= "Message: $message\n";
     
       if ($mail->send()){
