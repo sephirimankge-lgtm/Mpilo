@@ -27,7 +27,7 @@ p {
 	margin-bottom: 0;
 }
 
-.dropdown{
+.sidebar{
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -40,4 +40,9 @@ p {
 	display: flex;
 	flex-direction: colummn;
 	justify-content: flex-start;
+}
+
+.sidebar a{
+	width: 100%
+}
 	
