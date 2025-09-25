@@ -33,7 +33,7 @@
                     <span class="text-xl font-bold text-gray-800">Mpilo Senior Secondary School</span>
                 </div>    
                 <div class="sidebar">
-                    <li onclick=hidesidebar()><a href="#" class="text-gray-400 hover:text-white"><i data-feather="menu"></i></a></li>
+                    <li <buttonn onclick=hidesidebar()><a href="#" class="text-gray-400 hover:text-white"><i data-feather="menu"></i></a></button></li>
                     </li><a href="about.html" class="text-gray-600 hover:text-blue-600">About</a></li>
                     </li><a href="academics.html" class="text-gray-600 hover:text-blue-600">Academics</a></li>
                     </li><a href="admissions.html" class="text-gray-600 hover:text-blue-600">Admissions</a></li>
@@ -46,9 +46,7 @@
                     <a href="academics.html" class="text-gray-600 hover:text-blue-600">Academics</a>
                     <a href="admissions.html" class="text-gray-600 hover:text-blue-600">Admissions</a>
                     <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-                <button class="md:hidden" onclick=showsidebar()>
-                    <a href="about.html" class="text-gray-400 hover:text-white" class="md:hidden focus:outline-none"><i data-feather="menu"></i></a>
-                </button>
+                <button class="md:hidden" onclick=showsidebar()><a href="#" class="text-gray-400 hover:text-white"><i data-feather="menu"></i></a></button>
                 </div>
             </div>
         </div>
@@ -233,11 +231,11 @@
     </script>
     <script>
         function showsidebar(){
-            const dropdown = document.querSelector('.sidebar')
+            const sidebar = document.querSelector('.sidebar')
             sidebar.style.display = 'flex'
         }
         function hidesidebar(){
-            const dropdown = document.querySelector('.sidebar)
+            const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
     </script>
