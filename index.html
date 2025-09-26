@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <ul class="sidebar">
-            <li> <button onclick=hidesidebar()><a href="#" class="text-gray-400 hover:text-white"><i data-feather="menu"></i></a></button></li>
+            <li> <button onclick=hidesidebar()><a href="#" class="text-gray-400 hover:text-blue"><i data-feather="menu"></i></a></button></li>
             </li><a href="about.html" class="text-gray-600 hover:text-blue-600">About</a></li>
             </li><a href="academics.html" class="text-gray-600 hover:text-blue-600">Academics</a></li>
             </li><a href="admissions.html" class="text-gray-600 hover:text-blue-600">Admissions</a></li>
@@ -47,7 +47,7 @@
                     <a href="academics.html" class="text-gray-600 hover:text-blue-600">Academics</a>
                     <a href="admissions.html" class="text-gray-600 hover:text-blue-600">Admissions</a>
                     <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-                <button onclick=showsidebar()><a href="#" class="text-gray-400 hover:text-white"><i data-feather="menu"></i></a></button>
+                <button onclick=showsidebar()><a href="#" class="text-gray-400 hover:text-orange"><i data-feather="menu"></i></a></button>
                 </div>
             </div>
         </div>
@@ -232,7 +232,7 @@
     </script>
     <script>
         function showsidebar(){
-            const sidebar = document.querSelector('.sidebar')
+            const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
         }
         function hidesidebar(){
